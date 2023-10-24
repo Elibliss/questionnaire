@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@200;300;400;500;900&family=Roboto:wght@300;400&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            background: linear-gradient(315deg,#b8c6db 0%, #f5f7fa 100%);
+            min-height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .quiz-contaner {
+            background: #fff;
+            width: 600px;
+            max-width: 100%;
+            box-shadow: 0 0 10px 5px rgba(100, 100, 100, 0.1);
+            border-radius: 10px;
+            margin: 0;
+            overflow: hidden;
+        }
+        .quiz-content {
+            padding: 30px;;
+        }
+        h2 {
+            text-align: center;
+            padding: 1rem;
+            margin: 0;
+        }
+        button {
+            background-color: rgb(238, 164, 28);
+            border: none;
+            display: block;
+            font-family: inherit;
+            font-size: 1.3rem;
+            width: 100%;
+            padding: 1.2rem;
+            color: #fff;
+            transition: ease, 1000ms;
+            cursor: pointer;
+        }
+        .reload_btn {
+            width: 100%;
+            display: block;
+            padding: 0;
+            text-align: center;
+        }
+        .quiz-content ul li {
+            list-style: none;
+            line-height: 3;
+        }
+        button:hover {
+            background-color: rgb(250, 195, 92);
+        }
+        .quiz-content ul li input::backdrop {
+            background-color: rgb(33, 33, 201);
+        }
+      </style>
+</head>
+<body>
+    <div class="quiz-contaner">
+        <div class="quiz-content">
+            <h2 id="question">Question text</h2>
+            <ul>
+                <li>
+                    <input type="radio" id="a" class="checked">
+                    <label for="a" id="text_a">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="b" class="checked">
+                    <label for="b" id="text_b">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="c" class="checked">
+                    <label for="c" id="text_c">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="d" class="checked">
+                    <label for="d" id="text_d">Question</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">submit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
